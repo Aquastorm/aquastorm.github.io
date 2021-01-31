@@ -1,0 +1,17 @@
+$anthraciteGrey: #383e42;
+
+// Bootstrap overrides ////////////////////////////////////////////////////////////////////////////
+
+$body-bg: $anthraciteGrey;
+$body-color: #dbdbdb;
+
+
+// Bootstrap additions ////////////////////////////////////////////////////////////////////////////
+
+// .navbar {
+//     background-color: $anthraciteGrey;
+// }
+
+.bg-body {
+    color: $body-bg;
+}

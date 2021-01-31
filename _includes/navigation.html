@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-body">
+    <div class="container">
+        <a class="navbar-brand" href="#">Elia Borsa - Game Developer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+                {% for item in site.data.navigation %}
+                <a href="{{ item.link }}"
+                    {% if page.url==item.link %} class="nav-link active" aria-current="page"
+                    {% else %} class="nav-link"
+                    {% endif %}>
+                    {{ item.name}}
+                </a>
+                {% endfor %}
+                <!-- <a class="nav-link active" aria-current="page" href="#">Projects</a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Contact</a> -->
+            </div>
+        </div>
+    </div>
+</nav>
