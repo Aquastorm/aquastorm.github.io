@@ -1,44 +1,19 @@
 ---
 title: Projects | Elia Borsa - Game Developer
 ---
-<h1>{{"Coming Soon"}}</h1>
+<h1>Work in Progress</h1>
 <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
-        <div class="col">
-            <div class="card">
-              <img src="https://via.placeholder.com/480x320.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Snowsted Royale</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-            </div>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+    {% for project in site.projects %}
+      <div class="col">
+        <div class="card">
+          <img src="https://via.placeholder.com/480x320.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{ project.projectName }}</h5>
+            <p class="card-text">{{ project.shortDescription }}</p>
           </div>
-          <div class="col">
-            <div class="card">
-                <img src="https://via.placeholder.com/480x320.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Mercedes-Benz 4U Kids</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-                <img src="https://via.placeholder.com/480x320.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Wite Label</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-                <img src="https://via.placeholder.com/480x320.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Direct Build</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-            </div>
-          </div>
-    </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </div>
