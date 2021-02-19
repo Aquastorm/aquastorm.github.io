@@ -1,19 +1,22 @@
 ---
 title: Projects | Elia Borsa - Game Developer
 ---
-<h1>Work in Progress</h1>
-<div class="container">
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
-    {% for project in site.projects %}
-      <div class="col">
-        <div class="card">
-          <img src="https://via.placeholder.com/480x320.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">{{ project.projectName }}</h5>
-            <p class="card-text">{{ project.shortDescription }}</p>
-          </div>
-        </div>
+<div class="alert alert-info text-center" role="alert">
+  Work in Progress
+</div>
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+  {% for project in site.projects %}
+  <div class="col">
+    <div class="card">
+      <img src="https://via.placeholder.com/480x320.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">
+          <a href="{{ project.url }}">{{ project.projectName }}</a>
+        </h5>
+        <p class="card-text">{{ project.shortDescription }}</p>
       </div>
-    {% endfor %}
+    </div>
   </div>
+  {% endfor %}
 </div>

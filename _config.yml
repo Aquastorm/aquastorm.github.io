@@ -31,14 +31,21 @@ github_username:  aquastorm
 
 collections_dir: collections
 collections:
-  - projects
+  projects:
+    output: true
 
 
-defaults:
+defaults: 
   - scope:
       path: ""
+      type: "pages"
     values:
       layout: "default"
+  - scope:
+      path: "collections/_projects"
+      type: "projects"
+    values:
+      layout: "project"
 
 # Build settings
 #theme: minima

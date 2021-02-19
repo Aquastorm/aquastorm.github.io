@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<h1>{{ page.projectName }}</h1>
+<p><b>Platform(s): </b>{{ page.platforms }} </p>
+<p><b>Technologies: </b>{{ page.tech }}</p>
+{% if page.teamSize %}
+    <p><b>Team size: </b>{{ page.teamSize }}</p>
+{% endif %}
+
+{{ content }}
