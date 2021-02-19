@@ -1,11 +1,18 @@
 ---
 layout: default
 ---
-<h1>{{ page.projectName }}</h1>
+<h1 class="mb-4">{{ page.projectName }}</h1>
 <p><b>Platform(s): </b>{{ page.platforms }} </p>
 <p><b>Technologies: </b>{{ page.tech }}</p>
 {% if page.teamSize %}
     <p><b>Team size: </b>{{ page.teamSize }}</p>
+{% endif %}
+{% if page.websiteAddress %}
+    <p>
+        <b>Link: </b>
+        <!-- <i class="bi bi-link-45deg"></i> -->
+        <a href="{{ page.websiteAddress }}" rel="external noopener" target="_blank">Official website</a>
+    </p>
 {% endif %}
 
 {{ content }}

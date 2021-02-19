@@ -1,5 +1,10 @@
 $anthraciteGrey: #383e42;
 
+ 
+//   a:not([target="_blank"]) {
+//     color: purple;
+//   }
+
 // Bootstrap overrides ////////////////////////////////////////////////////////////////////////////
 
 // body
@@ -18,3 +23,27 @@ $card-height: 100%; // all cards will have equal height.
 .bg-body {
     color: $body-bg;
 }
+
+// Styles that depends on Bootstrap ///////////////////////////////////////////////////////////////
+
+a[target="_blank"]::before {
+    // @extend .bi !optional;
+    // @extend .bi-link-45deg  !optional;
+
+    content: "\f44d"; // Bootstrap icon link 45 degrees: https://icons.getbootstrap.com/icons/link-45deg/
+    color: $body-color;
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: text-bottom;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    // Another way to do it is by embedding the SVG data
+    // display: inline-block;
+    // content: url("data:image/svg+xml,<svg class='bi bi-chevron-right' width='32' height='32' viewBox='0 0 20 20' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z'/></svg>");
+  }
