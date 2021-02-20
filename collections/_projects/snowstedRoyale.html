@@ -3,7 +3,7 @@ title: Project Snowsted Royale | Elia Borsa - Game Developer
 projectName: Snowsted Royale
 shortDescription: Real-time multiplayer 2D shooter game
 platforms: <a href="https://play.google.com/store/apps/details?id=snowsted.game.arcade.shooter.pvp.battle.royale.deathmatch" rel="external noopener" target="_blank">Android</a>,
-    <a href="https://apps.apple.com/ch/app/snowsted-royale-2d-shooter/id1538785021" rel="external noopener" target="_blank">iOS</a>
+    <a href="https://apps.apple.com/ch/app/snowsted-royale-2d-shooter/id1538785021" rel="external noopener" target="_blank">iOS/iPadOS</a>
 tech: .NET, C#, GameAnalytics, Google Firebase, ironSource, network programming, Unity 2019
 teamSize: 6
 websiteAddress: https://www.snowsted.game/
@@ -13,10 +13,32 @@ websiteAddress: https://www.snowsted.game/
 </div>
 
 <h2>Project Description</h2>
-<p>{{ page.projectName }} is a 2D real-time multiplayer shooter game. Players can fight PvP battles alone or with friends in the preferred game mode 
-    (e.g. death match, capture the flag, battle royale).</p>
+<p>{{ page.projectName }} is a 2D real-time multiplayer shooter game. Players can fight PvP battles alone or with friends in one of the three offered game modes: 
+    death match, capture the flag or battle royale.</p>
 
 <h2>Main Tasks</h2>
-<ul>
-    <li></li>
+<ul>    
+    <li>Developed most of the menu UI and developed a few components and screens of the in-game one.</li>
+    <li>Created multiple reusable and configurable controls and widgets (UI components).</li>
+    <li>Built many core functionalities, e.g., code used by multiple systems to locally store/read game data to/from the device's local storage, network 
+        code to access web services.</li>
+    <li>
+        Developed the following systems:
+        <ul>
+            <li>Localization</li>
+            <li>Screens and popups management, navigation & animation</li>
+            <li>Tabs management & associated animations</li>
+            <li>The client-side code of a remote configuration system, to remotely drive many aspects of the game (e.g., duration and amount of player 
+                for every game mode, weapons damage and range, players walking and running speed).</li>
+        </ul>
+    </li>
+    <li>Game profiling and use of various optimizations techniques to improve game performance.</li>
+    <li>
+        Integrated the following SDKs: 
+        <ul>
+            <li>Google Firebase SDKs: Firebase Cloud Messaging (FCM) and Firebase Dynamic Links.</li>
+            <li>GameAnalytics SDK to collect core and customized metrics.</li>
+        </ul>
+    </li>
+    <li>Implemented the functionality to generate and scan QR codes to add other players to the actual list of friends.</li>
 </ul>
