@@ -6,4 +6,45 @@ platforms: iPadOS (only available for Mercedes-Benz car dealers -> not released 
 tech: .NET, AR Foundation, C#, network programming, Unity 2019
 teamSize: 6
 ---
-<h1>TBD</h1>
+<div class="alert alert-info text-center" role="alert">
+    Work in Progress
+</div>
+
+<h2>Project Description</h2>
+<p>{{ page.projectName }} offers content, i.e., five different modules (sub-games), adapted to the player's age: the difficulty of the modules are adapted 
+    to the player's age or only accessible to certain age categories.</p>
+
+<h2>Awards</h2>
+<ul>
+    <li>Best of Swiss Apps 2020 Mixed, Augmented & Virtual Reality – Gold</li>
+    <li>Best of Swiss Apps 2020 User Experience & Usability – Gold</li>
+    <li>Best of Swiss Apps 2020 Innovation – Silver</li>
+    <li>Best of Swiss Apps 2020 Functionality – Silver</li>
+</ul>
+
+<h2>Main Tasks</h2>
+<ul>    
+    <li>Definition of the project architecture and assets organization.</li>
+    <li>Built many core functionalities, e.g., code used by multiple systems to locally store/read game data to/from the device's local storage, network 
+        code to access web services.</li>
+    <li>
+        Developed the following systems:
+        <ul>
+            <li>Localization.</li>
+            <li>Scenes management and navigation.</li>
+            <li>Screens and popups management and navigation.</li>
+            <li>The client-side code of a remote configuration system, to remotely drive many aspects of the game (e.g., amount of points required to unlock 
+                the cars the player can drive, amount of points delivered by the questions of the in-game quiz).</li>
+        </ul>
+    </li>
+    <li>Game profiling and use of various optimizations techniques to improve game performance.</li>
+    <li>Programmed the client-side of an in-house analytics system to send analytics events to an analytics back-end server.</li>
+    <li>Implemented the functionality to generate and scan QR codes to add other players to the actual list of friends.</li>
+{% comment %}    
+•	Achievement system to manage and track user actions and the corresponding number of points (stars) assigned to unlock parts of the game. E.g.: the first time the player finishes a race, she receives a defined number of stars. With enough stars won with similar achievements, the player can unlock a new car.
+•	Developed the system to calculate the optimal path the opponent cars’ AI should follow on the tracks that are dynamically generated based on the track physically build by the player.
+•	Dynamic generation of the virtual racetracks (environments, road, colliders, spawn points, mini map, etc.) based on the track data generated when building the physical racetrack using the hexagonal tiles in the AR module.
+•	Development of a track builder tool for internal purposes. This enabled Staay employees to test many aspects of the race module and dynamic track generation without using the AR module (which recognizes the physical track tiles and generates data used to build the virtual track).
+•	Development of the main module’s UI related code.
+{% endcomment %}
+</ul>

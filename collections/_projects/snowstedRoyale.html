@@ -4,7 +4,7 @@ projectName: Snowsted Royale
 shortDescription: Real-time multiplayer 2D shooter game
 platforms: <a href="https://play.google.com/store/apps/details?id=snowsted.game.arcade.shooter.pvp.battle.royale.deathmatch" rel="external noopener" target="_blank">Android</a>,
     <a href="https://apps.apple.com/ch/app/snowsted-royale-2d-shooter/id1538785021" rel="external noopener" target="_blank">iOS/iPadOS</a>
-tech: .NET, C#, GameAnalytics, Google Firebase, ironSource, network programming, Unity 2019
+tech: .NET, Burst Compiler, C#, C# Job System, GameAnalytics, Google Firebase, ironSource, network programming, Unity 2019
 teamSize: 6
 websiteAddress: https://www.snowsted.game/
 ---
@@ -25,13 +25,15 @@ websiteAddress: https://www.snowsted.game/
     <li>
         Developed the following systems:
         <ul>
-            <li>Localization</li>
-            <li>Screens and popups management, navigation & animation</li>
-            <li>Tabs management & associated animations</li>
-            <li>The client-side code of a remote configuration system, to remotely drive many aspects of the game (e.g., duration and amount of player 
+            <li>Localization.</li>
+            <li>Screens and popups management, navigation & animation.</li>
+            <li>Tabs management & associated animations.</li>
+            <li>The client-side code of a remote configuration system, to remotely drive many aspects of the game (e.g., duration and amount of players 
                 for every game mode, weapons damage and range, players walking and running speed).</li>
         </ul>
     </li>
+    <li>Programmed the shop module, where the player can buy items with the in-game currency.</li>
+    <li>Programmed the user profile module, where the player can buy items to customize her avatar.</li>
     <li>Game profiling and use of various optimizations techniques to improve game performance.</li>
     <li>
         Integrated the following SDKs: 
@@ -40,5 +42,6 @@ websiteAddress: https://www.snowsted.game/
             <li>GameAnalytics SDK to collect core and customized metrics.</li>
         </ul>
     </li>
-    <li>Implemented the functionality to generate and scan QR codes to add other players to the actual list of friends.</li>
+    <li>Developed a solution to resize textures that are bigger than what the GPU can handle by doing bilinear filtering on the CPU using the C# Job System 
+        and the Burst compiler.</li>
 </ul>
