@@ -3,7 +3,7 @@ title: Project Mercedes-Benz 4U Kids | Elia Borsa - Game Developer
 projectName: Mercedes-Benz 4U Kids
 shortDescription: Multiple automotive-related games
 platforms: iPadOS (only available for Mercedes-Benz car dealers -> not released for consumers on the App Store)
-tech: .NET, AR Foundation, C#, network programming, Unity 2019
+tech: .NET, AR Foundation, C#, network programming, Unity profiler, Unity 2019
 teamSize: 6
 ---
 <div class="alert alert-info text-center" role="alert">
@@ -11,7 +11,7 @@ teamSize: 6
 </div>
 
 <h2>Project Description</h2>
-<p>{{ page.projectName }} offers content, i.e., five different modules (sub-games), adapted to the player's age: the difficulty of the modules are adapted 
+<p>{{ page.projectName }} offers automotive content, i.e., five different modules (sub-games), adapted to the player's age: the difficulty of the modules are adapted 
     to the player's age or only accessible to certain age categories.</p>
 
 <h2>Awards</h2>
@@ -27,6 +27,7 @@ teamSize: 6
     <li>Definition of the project architecture and assets organization.</li>
     <li>Built many core functionalities, e.g., code used by multiple systems to locally store/read game data to/from the device's local storage, network 
         code to access web services.</li>
+    <li>Developed the main module’s UI.</li>
     <li>
         Developed the following systems:
         <ul>
@@ -37,14 +38,17 @@ teamSize: 6
                 the cars the player can drive, amount of points delivered by the questions of the in-game quiz).</li>
         </ul>
     </li>
-    <li>Game profiling and use of various optimizations techniques to improve game performance.</li>
-    <li>Programmed the client-side of an in-house analytics system to send analytics events to an analytics back-end server.</li>
-    <li>Implemented the functionality to generate and scan QR codes to add other players to the actual list of friends.</li>
-{% comment %}    
-•	Achievement system to manage and track user actions and the corresponding number of points (stars) assigned to unlock parts of the game. E.g.: the first time the player finishes a race, she receives a defined number of stars. With enough stars won with similar achievements, the player can unlock a new car.
-•	Developed the system to calculate the optimal path the opponent cars’ AI should follow on the tracks that are dynamically generated based on the track physically build by the player.
-•	Dynamic generation of the virtual racetracks (environments, road, colliders, spawn points, mini map, etc.) based on the track data generated when building the physical racetrack using the hexagonal tiles in the AR module.
-•	Development of a track builder tool for internal purposes. This enabled Staay employees to test many aspects of the race module and dynamic track generation without using the AR module (which recognizes the physical track tiles and generates data used to build the virtual track).
-•	Development of the main module’s UI related code.
+    <li>Used various optimizations techniques to improve game performance.</li>
+    <li>Programmed the client-side of an in-house analytics system to send events to an analytics back-end server.</li>
+    <li>Developed the algorithm to calculate the optimal path for the opponent cars’ AI.</li>
+    <li>Wrote the achievements system to manage and track users actions and the corresponding number of delivered points, e.g., the first time the player 
+        finishes a race, she receives a defined number of points. Players can then use the earned points to unlock parts of the game. For instance, when 
+        enough points are won, the player can unlock new cars.</li>
+    <li>Developed a tracks builder tool for internal purposes. This enabled Staay employees to easily build reacetracks and test many aspects of the race 
+        module without the need to use the AR module. The latter is used to recognizes the physical track tiles and generates data used to build the 
+        virtual tracks by the race module.</li>
+    <li>Built the system to dynamically generate the virtual racetracks (environment, road, colliders, spawn points, mini map, etc.) based on the track 
+        data generated when building the physical racetrack using the hexagonal tiles in the AR module.</li>
+{% comment %}
 {% endcomment %}
 </ul>
