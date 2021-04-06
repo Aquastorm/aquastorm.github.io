@@ -11,24 +11,32 @@ teamSize: 1
 </div>
 
 <h2>Project Description</h2>
-<p>I'm developing games on PC, but most of what we develop at Staay needs to also run iOS. Thus, I often need to test what I'm developing on a real
-    iOS device. So my typicall workflow was to:
+<p>The orignal idea of this project was to solve an inefficiency in the development workflow: developers working on Windows machines couldn't build and 
+    deploy games for the iOS (and iPadOS) on their machines. For legal reasons, code for iOS can only be built on a Mac. Thus, developer that wanted to 
+    test even a little code change, had to go trough a manual, error prone and lengthy process, involving, among other things, to find a free Mac and 
+    physically go there to build their games.
+    With {{ page.projectName }}, every manual step has been automated and developers can now continue working on their projects while letting a remote Mac 
+    machine build and deploy their games on iOS devices.
+    The original concept was then extended to support:
+    <ul>
+        <li>Remote builds and deployments for the Android platform.</li>
+        <li>Publishing of the built games to Google Play and the Apple App Store.</li>
+    </ul>
 </p>
-<ul>
-    <li>push the last changes to the Git repository</li>
-    <li>walk to a Mac machine and login</li>
-    <li>pull the changes from Git</li>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
-
-{% comment %}    
-<p>write some code in the Unity was frustrated by the inefficiency of </p>
-<p>But what if I didn't want to</p>
-{% endcomment %}
-
 <h2>Main Tasks</h2>
 <ul>
-    <li></li>
+    <li>Developed the original idea and a small proof of concept during my free time. Eventually asked if Staay management was interested in such a 
+        product and received the ok to further develop it during my working time.
+    </li>
+    <li>Responsible to write the whole solution, which comprises server and client code, and guaranteed that the server application was always up and 
+        running.</li>
+    <li>Extended the Unity Editor to integrate the {{ page.projectName }} client within the Unity development environment. The client is distributed in 
+        form of a Unity package so that it can easily be added to any Unity project.</li>
+    <li>Wrote the end user and admin documentations to explain respectively how to use {{ page.projectName }} and how to configure the infrastructure 
+        required by the {{ page.projectName }} server in order to operate.</li>
+    <li>Ensured that every project could be built with {{ page.projectName }} and supported other team members with the automation of manual build-related 
+        activities. Reason: some projects required additional manual build steps in order to be built, mainly due to the integration of 3rd parties SDKs or 
+        libraries. The modification of the info.plist for iOS games is a common case.</li>
 </ul>
+{% comment %}
+{% endcomment %}
