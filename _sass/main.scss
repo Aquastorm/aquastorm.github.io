@@ -1,28 +1,4 @@
-$anthraciteGrey: #2d2f35;
-
- 
-//   a:not([target="_blank"]) {
-//     color: purple;
-//   }
-
-// Bootstrap overrides ////////////////////////////////////////////////////////////////////////////
-
-// body
-$body-bg: $anthraciteGrey;
-$body-color: #dbdbdb;
-
-// cards
-$card-height: 100%; // all cards will have equal height.
-
-// Bootstrap additions ////////////////////////////////////////////////////////////////////////////
-
-// .navbar {
-//     background-color: $anthraciteGrey;
-// }
-
-.bg-body {
-    color: $body-bg;
-}
+// Custom styles //////////////////////////////////////////////////////////////////////////////////
 
 // Styles that depends on Bootstrap ///////////////////////////////////////////////////////////////
 
@@ -47,3 +23,7 @@ a[target="_blank"]::before {
     // display: inline-block;
     // content: url("data:image/svg+xml,<svg class='bi bi-chevron-right' width='32' height='32' viewBox='0 0 20 20' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z'/></svg>");
   }
+
+//   a:not([target="_blank"]) {
+//     color: purple;
+//   }

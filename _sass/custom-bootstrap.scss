@@ -1,0 +1,57 @@
+
+// Include parts of Bootstrap: functions first (to manipulate colors, SVGs, calc, etc) ////////////
+@import "bootstrap/functions";
+
+
+// Bootstrap overrides ////////////////////////////////////////////////////////////////////////////
+
+// Custom colors
+$anthracite: #2d2f35;
+$cerulean:   #55aaee;
+
+// Color system
+$primary: $cerulean;
+
+// Body
+$body-bg: $anthracite;
+//$body-color: $gray-300;
+$body-color: #dbdbdb;
+
+// Cards
+$card-height: 100%; // all cards will have equal height.
+$card-color:  $body-color;
+$card-bg:     $body-bg;
+
+
+// Bootstrap additions ////////////////////////////////////////////////////////////////////////////
+
+// .navbar {
+//     background-color: $anthraciteGrey;
+// }
+
+.bg-body {
+    color: $body-bg;
+}
+
+// Include remainder of required Bootstrap stylesheets ////////////////////////////////////////////
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/utilities";
+
+// Include optional Bootstrap components //////////////////////////////////////////////////////////
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/containers";
+@import "bootstrap/grid";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/alert";
+
+@import "bootstrap/helpers";
+
+@import "bootstrap/utilities/api";
+
+//@import "bootstrap/bootstrap"

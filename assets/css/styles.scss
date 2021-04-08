@@ -1,8 +1,7 @@
 ---
 ---
-// Bootstrap overridden variables should be either placed in this file or in an imported file declared before the Bootstrap imports below.
-@import "main";
+// Bootstrap and bootstrap overridden variables 
+@import "custom-bootstrap";
 
-// Include all of Bootstrap
-// optimization[elia]: inlcude only the required parts of Bootstrap
-@import "bootstrap/bootstrap";
+// Custom sytles and the ones that depends on Bootstrap.
+@import "main";
