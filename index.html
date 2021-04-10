@@ -1,17 +1,22 @@
 ---
 title: Projects | Elia Borsa - Game Developer
 ---
-<div class="alert alert-info text-center" role="alert">
+<div class="alert alert-warning text-center" role="alert">
   Work in Progress
 </div>
 
 <h2 class="mb-3">Selection of professional projects</h2>
 
-<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-4">
   {% for project in site.projects %}
   <div class="col">
-    <div class="card border-0">
-      <img src="https://via.placeholder.com/480x320.jpg" class="card-img-top" alt="...">
+    <div class="card border-secondary rounded-0">
+      <a href="{{ project.url }}">
+        <img class="card-img-top" style="border-radius: 0px" alt="..."
+          {% if project.thumbnailFile %} src={{ project.thumbnailFile }}
+          {% else %} src="https://via.placeholder.com/640x480.jpg/2d2f35/ffffff?text=Elia+Borsa+Portfolio"
+          {% endif %}>
+      </a>
       <div class="card-body">
         <h5 class="card-title">
           <a href="{{ project.url }}">{{ project.projectName }}</a>
