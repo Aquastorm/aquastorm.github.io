@@ -5,39 +5,68 @@ shortDescription: Solution to build, deploy and publish Unity games
 platforms: PC, macOS, Linux
 tech: .NET (client), .NET Core (server), C#, fastlane, network programming, Ruby, Unity Editor 2019-2020 customization, Xcode
 teamSize: 1
-thumbnailFile: /assets/images/projects/DirectBuild_Thumbnail.png
+thumbnailFile: /assets/images/projects/DB_Thumbnail.png
 ---
-<div class="alert alert-warning text-center" role="alert">
-    Work in Progress
-</div>
 
-<h2>Project Description</h2>
-<p>The original idea of this project was to solve an inefficiency in the development workflow: developers working on Windows machines couldn't build and 
-    deploy games for the iOS (and iPadOS) on their machines. For legal reasons, code for iOS can only be built on a Mac. Thus, developer that wanted to 
-    test even a little code change, had to go trough a manual, error prone and lengthy process, involving, among other things, to find a free Mac and 
-    physically go there to build their games.
-    With {{ page.projectName }}, every manual step has been automated and developers can now continue working on their projects while letting a remote Mac 
-    machine build and deploy their games on iOS devices.
-    The original concept was then extended to support:
+<section>
+    <h2>Project Description</h2>
+    <p>
+        The original idea of this project was to solve an inefficiency in the development workflow: developers working on Windows machines couldn't build and 
+        deploy games for the iOS (and iPadOS) on their machines. For legal reasons, code for iOS can only be built on a Mac. Thus, developer that wanted to 
+        test even a little code change, had to go trough a manual, error prone and lengthy process, involving, among other things, to find a free Mac and 
+        physically go there to build their games.
+        With {{ page.projectName }}, every manual step has been automated and developers can now continue working on their projects while letting a remote Mac 
+        machine build and deploy their games on iOS devices.
+    </p>
+    <div class="text-center mt-4 mb-2">
+        <figure class="figure">
+            <img class="figure-img img-fluid" src="/assets/images/projects/DB_PackageManagerDescription_c.png" width="500" height="244"
+                alt="Various info shown by the Package Manager about the {{ page.projectName }} package: author, description, version, etc.">
+            <figcaption class="figure-caption text-center">{{ page.projectName }} package information displayed by the Package Manager.</figcaption>
+        </figure>
+    </div>
+    <p>
+        The original concept has been afterwards extended to also support:
+        <ul>
+            <li>Remote builds and deployments for the Android platform.</li>
+            <li>Publishing of the built games to Google Play and the Apple App Store.</li>
+        </ul>
+    </p>
+</section>
+<section>
+    <h2>Main Tasks</h2>
     <ul>
-        <li>Remote builds and deployments for the Android platform.</li>
-        <li>Publishing of the built games to Google Play and the Apple App Store.</li>
+        <li>
+            Developed the original idea and a small proof of concept during my free time. Eventually asked if Staay management was interested in such a 
+            product and received the approval to further develop it during my working time.
+        </li>
+        <li>
+            Responsible to write the whole solution, which comprises server and client code, and guaranteed that the server application was always up and 
+            running.
+        </li>
+        <li>
+            <p>
+                Extended the Unity Editor to integrate the {{ page.projectName }} client within the Unity development environment. The client is distributed 
+                in form of a Unity package so that it can be easily added to any Unity project.
+            </p>
+            <div class="text-center mt-4 mb-2">
+                <figure class="figure">
+                    <img class="figure-img img-fluid" src="/assets/images/projects/DB_PackageManagerList_c.png" width="302" height="92"
+                        alt="Image showing that {{ page.projectName }} can be added to a Unity project using the Package Manager.">
+                    <figcaption class="figure-caption text-center">{{ page.projectName }} can be added to Unity projects via the Package Manager.</figcaption>
+                </figure>
+            </div>
+        </li>
+        <li>
+            Wrote the end user and admin documentations to explain respectively how to use {{ page.projectName }} and how to configure the infrastructure 
+            required by the {{ page.projectName }} server in order to operate.
+        </li>
+        <li>
+            Ensured that every project could be built with {{ page.projectName }} and supported other team members with the automation of manual build-related 
+            activities. Reason: some projects required additional manual build steps in order to be built, mainly due to the integration of 3rd parties SDKs or 
+            libraries. The modification of the <i>info.plist</i> file for iOS games is a common case.
+        </li>
     </ul>
-</p>
-<h2>Main Tasks</h2>
-<ul>
-    <li>Developed the original idea and a small proof of concept during my free time. Eventually asked if Staay management was interested in such a 
-        product and received the approval to further develop it during my working time.
-    </li>
-    <li>Responsible to write the whole solution, which comprises server and client code, and guaranteed that the server application was always up and 
-        running.</li>
-    <li>Extended the Unity Editor to integrate the {{ page.projectName }} client within the Unity development environment. The client is distributed in 
-        form of a Unity package so that it can easily be added to any Unity project.</li>
-    <li>Wrote the end user and admin documentations to explain respectively how to use {{ page.projectName }} and how to configure the infrastructure 
-        required by the {{ page.projectName }} server in order to operate.</li>
-    <li>Ensured that every project could be built with {{ page.projectName }} and supported other team members with the automation of manual build-related 
-        activities. Reason: some projects required additional manual build steps in order to be built, mainly due to the integration of 3rd parties SDKs or 
-        libraries. The modification of the <i>info.plist</i> file for iOS games is a common case.</li>
-</ul>
+</section>
 {% comment %}
 {% endcomment %}
