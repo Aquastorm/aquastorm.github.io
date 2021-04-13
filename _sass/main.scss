@@ -1,5 +1,8 @@
 // Custom styles //////////////////////////////////////////////////////////////////////////////////
 
+
+// Styles that depends on Bootstrap ///////////////////////////////////////////////////////////////
+
 h1 {
   margin-bottom: $spacer * 1.5;
 }
@@ -9,7 +12,11 @@ h2 {
   margin-bottom: $spacer * 0.7;
 }
 
-// Styles that depends on Bootstrap ///////////////////////////////////////////////////////////////
+.screenshot-center {
+  text-align: center;
+  margin-top: $spacer * 1.6;
+  margin-bottom: $spacer * 0.6;
+}
 
 a[target="_blank"]::before {
     // @extend .bi !optional;

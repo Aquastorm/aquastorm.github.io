@@ -9,41 +9,76 @@ teamSize: 6
 websiteAddress: https://www.snowsted.game/
 thumbnailFile: /assets/images/projects/Snowsted_Thumbnail.jpg
 ---
-<div class="alert alert-warning text-center" role="alert">
-    Work in Progress
-</div>
-
-<h2>Project Description</h2>
-<p>{{ page.projectName }} is a 2D real-time multiplayer shooter game. Players can fight PvP battles alone or with friends in one of the three offered game modes: 
-    death match, capture the flag or battle royale.</p>
-
-<h2>Main Tasks</h2>
-<ul>    
-    <li>Developed most of the menu UI and developed a few components and screens of the in-game one.</li>
-    <li>Created multiple reusable and configurable controls and widgets (UI components).</li>
-    <li>Built many core functionalities, e.g., code used by multiple systems to locally store/read game data to/from the device's local storage, network 
-        code to access web services.</li>
-    <li>
-        Developed the following systems:
-        <ul>
-            <li>Localization.</li>
-            <li>Screens and popups management, navigation & animation.</li>
-            <li>Screens' tabs management & associated animations.</li>
-            <li>The client-side code of a remote configuration system, to remotely drive many aspects of the game (e.g., duration and amount of players 
-                for every game mode, weapons damage and range, players walking and running speed).</li>
-        </ul>
-    </li>
-    <li>Programmed the shop module, where the player can buy items with the in-game currency.</li>
-    <li>Programmed the user profile module, where the player can buy items to customize her avatar.</li>
-    <li>Used various optimizations techniques to improve game performance.</li>
-    <li>Optimized the game so that it can run on low-end devices.</li>
-    <li>
-        Integrated the following SDKs: 
-        <ul>
-            <li>Google Firebase SDKs: Firebase Cloud Messaging (FCM) and Firebase Dynamic Links.</li>
-            <li>GameAnalytics SDK to collect core and customized metrics.</li>
-        </ul>
-    </li>
-    <li>Developed a solution to resize textures that are bigger than what the GPU can handle by doing bilinear filtering on the CPU using the C# Job System 
-        and the Burst compiler.</li>
-</ul>
+<section>
+    <h2>Project Description</h2>
+    <p>
+        {{ page.projectName }} is a 2D real-time multiplayer shooter game. Players can fight PvP battles alone or with friends in one of the three offered 
+        game modes: death match, capture the flag or battle royale.
+    </p>
+    <div class="screenshot-center">
+        <figure class="figure">
+            <img class="figure-img img-fluid" src="/assets/images/projects/Snowsted_Ingame02_c.jpg" width="800" height="450"
+                alt="In-game screenshot showing players fighting each other on the White House map.">
+            <figcaption class="figure-caption text-center">{{ page.projectName }}'s in-game assets are hand painted with watercolor.</figcaption>
+        </figure>
+    </div>
+</section>
+<section>
+    <h2>Main Tasks</h2>
+    <ul>
+        <li>Created multiple reusable and configurable controls and widgets (UI components).</li>    
+        <li>
+            <p>Developed most of the menu UI and developed a few components and screens of the in-game one.</p>
+            <div class="screenshot-center">
+                <figure class="figure">
+                    <img class="figure-img img-fluid" src="/assets/images/projects/Snowsted_Hub_c.jpg" width="800" height="450"
+                        alt="The main screen, where one can access all game features. In the mid of the screen the player can see her customized avatar.">
+                    <figcaption class="figure-caption text-center">{{ page.projectName }}'s main screen displays the player customized avatar. The menu UI 
+                        is animated when transitioning between the different screens.</figcaption>
+                </figure>
+            </div>
+        </li>
+        <li>
+            Built many core functionalities, e.g., code used by multiple systems to locally store/read game data to/from the device's local storage, network 
+            code to access web services.
+        </li>
+        <li>
+            Developed the following systems:
+            <ul>
+                <li>Localization.</li>
+                <li>Screens and popups management, navigation & animation.</li>
+                <li>Screens' tabs management & associated animations.</li>
+                <li>
+                    The client-side code of a remote configuration system, to remotely drive many aspects of the game (e.g., duration and amount of players 
+                    for every game mode, weapons damage and range, players walking and running speed).
+                </li>
+            </ul>
+        </li>
+        <li>
+            Programmed the shop module, where the player can buy items (e.g., medkits, smoke grenades and shots of different colors) with the in-game 
+            currency.
+        </li>
+        <li>
+            <p>Programmed the user profile module, where the player can buy items to customize her avatar.</p>
+            <div class="screenshot-center">
+                <figure class="figure">
+                    <img class="figure-img img-fluid" src="/assets/images/projects/Snowsted_ProfileClothing_c.jpg" width="800" height="450"
+                        alt="Displays clothes that can be bought with the in-game currency to customize the player avatar.">
+                    <figcaption class="figure-caption text-center">The player can buy different items (e.g., masks, caps and suits) with the in-game currency 
+                        to personalize her avatar.</figcaption>
+                </figure>
+            </div>
+        </li>
+        <li>Used various optimizations techniques to improve game performance.</li>
+        <li>Optimized the game so that it can run on low-end devices.</li>
+        <li>
+            Integrated the following SDKs: 
+            <ul>
+                <li>Google Firebase SDKs: Firebase Cloud Messaging (FCM) and Firebase Dynamic Links.</li>
+                <li>GameAnalytics SDK to collect core and customized metrics.</li>
+            </ul>
+        </li>
+        <li>Developed a solution to resize textures that are bigger than what the GPU can handle by doing bilinear filtering on the CPU using the C# Job System 
+            and the Burst compiler.</li>
+    </ul>
+</section>
