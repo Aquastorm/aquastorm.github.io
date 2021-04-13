@@ -5,22 +5,36 @@
 
 // Bootstrap overrides ////////////////////////////////////////////////////////////////////////////
 
-// Custom colors
+//           Custom colors
 $anthracite: #2d2f35;
 $cerulean:   #55aaee;
+$white:      #fff;
+$martian-colony: #e5750f;
+$bright-lavender: #bf94e4;
 
 // Color system
 $primary: $cerulean;
 
 // Body
 $body-bg: $anthracite;
-//$body-color: $gray-300;
 $body-color: #dbdbdb;
+
+// Typography
+$headings-color: $cerulean;
+//$headings-color: $martian-colony;
+//$headings-color: $bright-lavender;
+
+// Navbar
+$navbar-dark-active-color: $cerulean;
+$navbar-dark-brand-color: $white;
 
 // Cards
 $card-height: 100%; // all cards will have equal height.
 $card-color:  $body-color;
 $card-bg:     $body-bg;
+
+// Figures
+$figure-caption-color: #adb5bd;
 
 
 // Bootstrap additions ////////////////////////////////////////////////////////////////////////////
