@@ -7,49 +7,90 @@ tech: .NET, AR Foundation, C#, network programming, Unity profiler, Unity 2019
 teamSize: 6
 thumbnailFile: /assets/images/projects/MB4UKids_Thumbnail.jpg
 ---
-<div class="alert alert-warning text-center" role="alert">
-    Work in Progress
-</div>
 
-<h2>Project Description</h2>
-<p>{{ page.projectName }} offers automotive content, i.e., five different modules (sub-games), adapted to the player's age: the difficulty of the modules are adapted 
-    to the player's age or only accessible to certain age categories.</p>
-
-<h2>Awards</h2>
-<ul>
-    <li>Best of Swiss Apps 2020 Mixed, Augmented & Virtual Reality – Gold</li>
-    <li>Best of Swiss Apps 2020 User Experience & Usability – Gold</li>
-    <li>Best of Swiss Apps 2020 Innovation – Silver</li>
-    <li>Best of Swiss Apps 2020 Functionality – Silver</li>
-</ul>
-
-<h2>Main Tasks</h2>
-<ul>    
-    <li>Definition of the project architecture and assets organization.</li>
-    <li>Built many core functionalities, e.g., code used by multiple systems to locally store/read game data to/from the device's local storage, network 
-        code to access web services.</li>
-    <li>Developed the main module’s UI.</li>
-    <li>
-        Developed the following systems:
-        <ul>
-            <li>Localization.</li>
-            <li>Scenes management and navigation.</li>
-            <li>Screens and popups management and navigation.</li>
-            <li>The client-side code of a remote configuration system, to remotely drive many aspects of the game (e.g., amount of points required to unlock 
-                the cars the player can drive, amount of points delivered by the questions of the in-game quiz).</li>
-        </ul>
-    </li>
-    <li>Used various optimizations techniques to improve game performance.</li>
-    <li>Programmed the client-side of an in-house analytics system to send events to an analytics back-end server.</li>
-    <li>Developed the algorithm to calculate the optimal path for the opponent cars’ AI.</li>
-    <li>Wrote the achievements system to manage and track users actions and the corresponding number of delivered points, e.g., the first time the player 
-        finishes a race, she receives a defined number of points. Players can then use the earned points to unlock parts of the game. For instance, when 
-        enough points are won, the player can unlock new cars.</li>
-    <li>Developed a tracks builder tool for internal purposes. This enabled Staay employees to easily build race tracks and test many aspects of the race 
-        module without the need to use the AR module. The latter is used to recognizes the physical track tiles and generates data used to build the 
-        virtual tracks by the race module.</li>
-    <li>Built the system to dynamically generate the virtual racetracks (environment, road, colliders, spawn points, mini map, etc.) based on the track 
-        data generated when building the physical racetrack using the hexagonal tiles in the AR module.</li>
-{% comment %}
-{% endcomment %}
-</ul>
+<section>
+    <h2>Project Description</h2>
+    <p>
+        {{ page.projectName }} offers automotive content, i.e., five different modules (sub-games), adapted to the player's age: the difficulty of the 
+        modules are adapted to the player's age or only accessible to certain age categories.
+    </p>
+    <div class="screenshot-center">
+        <figure class="figure">
+            <img class="figure-img img-fluid" src="/assets/images/projects/MB4UKids_Garage01.jpg" width="800" height="600"
+                alt="Close-up of a car's wheel rim.">
+            <figcaption class="figure-caption text-center">Unlocked cars can be customized in the garage module.</figcaption>
+        </figure>
+    </div>
+</section>
+<section>
+    <h2>Awards</h2>
+    <ul>
+        <li>Best of Swiss Apps 2020 Mixed, Augmented & Virtual Reality – Gold</li>
+        <li>Best of Swiss Apps 2020 User Experience & Usability – Gold</li>
+        <li>Best of Swiss Apps 2020 Innovation – Silver</li>
+        <li>Best of Swiss Apps 2020 Functionality – Silver</li>
+    </ul>
+</section>
+<section>
+    <h2>Main Tasks</h2>
+    <ul>    
+        <li>Definition of the project architecture and assets organization.</li>
+        <li>Built many core functionalities, e.g., code used by multiple systems to locally store/read game data to/from the device's local storage, network 
+            code to access web services.</li>
+        <li>Developed the main module’s UI.</li>
+        <li>
+            Developed the following systems:
+            <ul>
+                <li>Localization.</li>
+                <li>Scenes management and navigation.</li>
+                <li>Screens and popups management and navigation.</li>
+                <li>The client-side code of a remote configuration system, to remotely drive many aspects of the game (e.g., amount of points required to unlock 
+                    the cars the player can drive, amount of points delivered by the questions of the in-game quiz).</li>
+            </ul>
+        </li>
+        <li>Used various optimizations techniques to improve game performance.</li>   
+        <li>Programmed the client-side of an in-house analytics system to send events to an analytics back-end server.</li>
+        <li>
+            Wrote the achievements system to manage and track users actions and the corresponding number of delivered points, e.g., the first time the player 
+            finishes a race, she receives a defined number of points. Players can then use the earned points to unlock parts of the game. For instance, when 
+            enough points are won, the player can unlock new cars.
+        </li>
+        <li>
+            <p>
+                Developed a racetracks builder tool for internal purposes. This enabled Staay employees to easily build racetracks and test many aspects 
+                of the race module without the need to use the AR one. The latter is able to recognize physical racetracks made of hexagonal tiles and 
+                generates data for the race module to create the virtual racetracks.
+            </p>
+            <div class="screenshot-center">
+                <figure class="figure">
+                    <img class="figure-img img-fluid" src="/assets/images/projects/MB4UKids_Scan01.jpg" width="800" height="600"
+                        alt="An iPad running the AR module which recognized the physical racetrack made of hexagonal tiles.">
+                    <figcaption class="figure-caption text-center">
+                        The player can build a racetrack using hexagonal tiles. The AR module is then able to recognize the individual physical tiles. 
+                        The player can race with any of the unlocked cars on the virtual representation of the physical racetrack.
+                    </figcaption>
+                </figure>
+            </div>
+        </li>
+        <li>Wrote the code to check if the racetracks built either using the tracks builder or via the AR module is a valid one.</li>
+        <li>
+            <p>
+                Built the system to dynamically generate virtual racetracks (environment, road, colliders, spawn points, mini map, etc.) based on the 
+                track data generated by the AR module when  built using hexagonal tiles gets recognized.
+            </p>
+            <div class="screenshot-center">
+                <figure class="figure">
+                    <img class="figure-img img-fluid" src="/assets/images/projects/MB4UKids_Race01.jpg" width="800" height="600"
+                        alt="A customized car placed on the start line and waiting for the countdown to finish.">
+                    <figcaption class="figure-caption text-center">
+                        The player car race any unlocked car on the digital representation of the racetrack she built in the physical world with hexagonal 
+                        map tiles.
+                    </figcaption>
+                </figure>
+            </div>
+        </li>
+        <li>Developed an algorithm to calculate the optimal path for the opponent cars’ AI.</li>
+    {% comment %}
+    {% endcomment %}
+    </ul>
+</section>
