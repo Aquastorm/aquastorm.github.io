@@ -4,7 +4,7 @@ title: Projects | Elia Borsa - Game Developer
 
 <h1>Selection of professional projects</h1>
 
-<div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-4 pt-2">
+<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 g-5 pt-3">
   {% for project in site.projects %}
   <div class="col">
     <div class="card border-secondary rounded-0">
@@ -14,7 +14,7 @@ title: Projects | Elia Borsa - Game Developer
           {% else %} src="https://via.placeholder.com/640x480.jpg/2d2f35/ffffff?text=Elia+Borsa+Portfolio"
           {% endif %}>
       </a>
-      <div class="card-body">
+      <div class="card-body px-4 py-3">
         <h5 class="card-title">
           <a href="{{ project.url }}">{{ project.projectName }}</a>
         </h5>
